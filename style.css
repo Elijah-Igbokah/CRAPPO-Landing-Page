@@ -10,13 +10,13 @@ html{
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
-    color: #ffff;
     box-sizing: border-box;
 }
 
 body {
     overflow-x: hidden; /* Hide horizontal scrollbar */
     background: #0D0D2B;
+    color: #ffff;
   }
 
 
@@ -176,6 +176,7 @@ text-align: center;
     justify-content: center;
     
 }
+
 
 .hero-text > h1{
     font-family: 'Rubik';
@@ -352,6 +353,7 @@ text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #0D0D2B;
 
 }
 
@@ -359,8 +361,6 @@ text-align: center;
     background: #2B076E;
     color: #FFFFFF;
     backdrop-filter: blur(250px);
-    /* Note: backdrop-filter has minimal browser support */
-
     border-radius: 16px;
 }
 .col > p{
@@ -381,7 +381,7 @@ text-align: center;
     font-size: 32px;
     line-height: 150%;
     text-align: center;
-    color: #0D0D2B;
+    color: inherit;
 }
 
 .col-title{
@@ -416,4 +416,46 @@ text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+
+.mining-btn{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 24px;
+    padding: 16px 16px 16px 24px;
+    width: 202px;
+    background: #3671E9;
+    border-radius: 32px;
+    cursor: pointer;
+}
+.mining-btn > h2{
+    background: #3671E9;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 150%;
+    /* identical to box height, or 27px */
+
+    text-align: center;
+    /* display: inline-block; */
+}
+.mining-btn-icon{
+    /* padding: 6px 11px; */
+    width: 32px;
+    height: 32px;
+    background: #ffff;
+    color: #3671E9;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.activeIcon{
+    display: flex;
 }

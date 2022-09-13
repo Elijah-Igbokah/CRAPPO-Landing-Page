@@ -28,6 +28,13 @@ nav{
     margin-bottom: 86px;
 }
 
+/* section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
 .left-side{
     display: flex;
     flex-direction: row;
@@ -250,12 +257,12 @@ text-align: center;
     color: #E0E0E0;
 }
 
-.why-sect{
+.flex-wrapper{
     display: flex;
     flex-direction: row;
     margin-bottom: 6.25rem;
 }
-.why-sect-text > h1{
+.flex-text > h1{
     font-weight: 700;
     font-size: 40px;
     line-height: 150%;
@@ -263,7 +270,7 @@ text-align: center;
     margin-bottom: 23.99px;
 }
 
-.why-sect-text > p{
+.flex-text > p{
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
@@ -272,7 +279,7 @@ text-align: center;
     margin-bottom: 33.99px;
 }
 
-.why-sect-text > button{
+.flex-text > button{
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
@@ -308,6 +315,7 @@ text-align: center;
     height: auto;
     min-height: 100px;
     background: #ffff;
+    padding-bottom: 100px;
 }
 .hash-rate{
     position: relative;
@@ -458,4 +466,72 @@ text-align: center;
 }
 .activeIcon{
     display: flex;
+}
+
+/* SECTION 3 */
+.sect-3{
+    min-height: 80vh;
+    background: #2B076E;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.sect-3 .wrapper > h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 150%;
+}
+.sect-3 h1{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+}
+.sect-3 .wrapper{
+    width: 47.375rem;
+    margin: auto;
+    text-align: center;
+}
+
+.sect-3 button{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    padding: 16px 24px;
+    background: #3671E9;
+    border-radius: 32px;
+    border: none;
+}
+.sect-3 .flex-wrapper{
+    padding-top: 6.25rem;
+    padding-left: 7.5rem;
+    padding-right: 0px;
+    gap: 9.125rem;
+}
+
+.sect-3 #div2{
+    flex-direction: row-reverse;
+    padding: 0px 20px;
+    gap: 5.7rem;
+}
+.sect-3 #div3{
+    gap: 4rem;
+}
+.sect-3 .flex-text{
+    width: 28.375rem;
+}
+#div3 h1{
+    padding: 0px;
+    margin: 0px;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.activeWindow{
+    transform: translateY(0px);
+    opacity: 1;
 }

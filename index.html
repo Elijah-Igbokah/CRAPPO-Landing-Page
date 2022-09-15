@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +19,52 @@
     <title>CRAPPO</title>
   </head>
   <body>
-    <nav>
+    <nav class="navbar navbar-expand-sm navbar-dark p-md-3">
+      <div class="container-fluid" id="nav-container">
+        <a class="navbar-brand" href="#">
+          <div class="left-side">
+            <img id="logo" src="Crypto images/Logo.png" alt="" />
+            <div id="logo-text">CRAPPO</div>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item my-auto">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item my-auto">
+              <a class="nav-link active" href="#">Features</a>
+            </li>
+            <li class="nav-item my-auto">
+              <a class="nav-link active" href="#">About</a>
+            </li>
+            <li class="nav-item my-auto">
+              <a class="nav-link active" href="#">Contact</a>
+            </li>
+            <li class="nav-item my-auto" id="login-a">
+              <a class="nav-link active" href="#">Login</a>
+            </li>
+            <div class="my-auto" id="vertical-seperator"></div>
+            <li><button class="nav-btn">Register</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- <nav>
       <div class="left-side">
         <img id="logo" src="Crypto images/Logo.png" alt="" />
         <div id="logo-text">CRAPPO</div>
@@ -32,7 +81,7 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <header>
       <div class="hero-text">
         <div class="hero-tag">
@@ -144,9 +193,9 @@
           </p>
           <div class="mining-btn">
             <h2>Start Mining</h2>
-            <div class="mining-btn-icon">&gt;</div>
+            <div class="mining-btn-icon" }>&gt;</div>
           </div>
-          <button id="grid-btn-icon">
+          <button class="grid-btn-icon show-icon">
             <img src="Crypto images/Vector.svg" alt="" />
           </button>
         </div>
@@ -164,7 +213,7 @@
             <h2>Start Mining</h2>
             <div class="mining-btn-icon">&gt;</div>
           </div>
-          <button id="grid-btn-icon">
+          <button class="grid-btn-icon show-icon">
             <img src="Crypto images/Vector.svg" alt="" />
           </button>
         </div>
@@ -181,7 +230,7 @@
             <h2>Start Mining</h2>
             <div class="mining-btn-icon">&gt;</div>
           </div>
-          <button id="grid-btn-icon">
+          <button class="grid-btn-icon show-icon">
             <img src="Crypto images/Vector.svg" alt="" />
           </button>
         </div>
@@ -246,59 +295,59 @@
         </div>
       </div>
     </section>
-    <section class="sect-4"></section>
-  </body>
-  <footer>
-    <div class="footer-grid">
-      <div class="footer-logo">
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-logo">
+          <div>
+            <img id="logo" src="Crypto images/Logo.png" alt="" />
+          </div>
+          <div id="footer-logo-text">CRAPPO</div>
+        </div>
         <div>
-          <img id="logo" src="Crypto images/Logo.png" alt="" />
+          <h2>Quick Link</h2>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
-        <div id="footer-logo-text">CRAPPO</div>
-      </div>
-      <div>
-        <h2>Quick Link</h2>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Resources</h2>
-        <ul>
-          <li>
-            <a href="#">Download Whitepaper</a>
-          </li>
-          <li><a href="#">Smart Token</a></li>
-          <li><a href="#">Blockchain Explorer</a></li>
-          <li><a href="#">Crypto API</a></li>
-          <li><a href="#">Interest</a></li>
-        </ul>
-      </div>
-      <div id="payment-systems">
-        <h1>We accept following payment systems</h1>
-        <div class="footer-icons">
-          <img src="Crypto images/visa.png" alt="" />
-          <img src="Crypto images/mastercard.png" alt="" />
-          <img src="Crypto images/bitcoin.png" alt="" />
+        <div>
+          <h2>Resources</h2>
+          <ul>
+            <li>
+              <a href="#">Download Whitepaper</a>
+            </li>
+            <li><a href="#">Smart Token</a></li>
+            <li><a href="#">Blockchain Explorer</a></li>
+            <li><a href="#">Crypto API</a></li>
+            <li><a href="#">Interest</a></li>
+          </ul>
+        </div>
+        <div id="payment-systems">
+          <h1>We accept following payment systems</h1>
+          <div class="footer-icons">
+            <img src="Crypto images/visa.png" alt="" />
+            <img src="Crypto images/mastercard.png" alt="" />
+            <img src="Crypto images/bitcoin.png" alt="" />
+          </div>
         </div>
       </div>
-    </div>
-    <div id="bottom-footer">
-      <div id="copyright-text">©2021 CRAPPO. All rights reserved</div>
-      <div class="social-icons">
-        <img src="Crypto images/Vector (4).svg" alt="" />
-        <img src="Crypto images/Vector (3).svg" alt="" />
-        <img src="Crypto images/Vector (2).svg" alt="" />
-        <img src="Crypto images/Vector (1).svg" alt="" />
-        <img src="Crypto images/linkedin.svg" alt="" />
+      <div id="bottom-footer">
+        <div id="copyright-text">©2021 CRAPPO. All rights reserved</div>
+        <div class="social-icons">
+          <img src="Crypto images/Vector (4).svg" alt="" />
+          <img src="Crypto images/Vector (3).svg" alt="" />
+          <img src="Crypto images/Vector (2).svg" alt="" />
+          <img src="Crypto images/Vector (1).svg" alt="" />
+          <img src="Crypto images/linkedin.svg" alt="" />
+        </div>
       </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

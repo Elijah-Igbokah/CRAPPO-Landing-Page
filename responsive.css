@@ -1,5 +1,5 @@
 @media only screen and (max-width: 1337px) {
-    nav, header, .sect-3 > .flex-wrapper{
+    #nav-container, header, .sect-3 > .flex-wrapper{
         padding-left: 4rem;
     }
     .sect-3 #div2, .sect-3 .flex-wrapper{
@@ -14,7 +14,7 @@
   }
 
 @media only screen and (max-width: 1279px) {
-    nav, header, .sect-3 > .flex-wrapper{
+    #nav-container, header, .sect-3 > .flex-wrapper{
         padding-left: 3rem;
     }
   }
@@ -32,7 +32,7 @@
   }
 
 @media only screen and (max-width: 1024px){
-    nav, header, .sect-3 > .flex-wrapper{
+    #nav-container, header, .sect-3 > .flex-wrapper{
         padding-left: 1rem;
     }
     .sect-3 #div2, .sect-3 .flex-wrapper{
@@ -100,10 +100,21 @@
     header{
         display: block;
     }
-    nav{
+    #nav-container{
         margin-bottom: 36px;
         padding-top: 20px;
     }
+    .nav-btn{
+        margin-left: 0px;
+    }
+    #vertical-seperator{
+        display: none;
+    }
+    #login-a{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
     .hero-text{
         width: 100%;
         padding-top: 0;
@@ -142,6 +153,11 @@
     }
     #top input{
         width: 80%;
+    }
+    #top select{
+        width: 50%;
+        
+        
     }
     #top button{
         padding: 1rem 1.5rem;
@@ -210,7 +226,14 @@
     .hero-tag > p1, .hero-tag > p{
         font-size: 12px;
     }
-
+    .navbar a{
+        text-align: right;
+    }
+    .nav-btn{
+        float: right;
+        padding: 5px 10px;
+    }
+    
 
 }
 

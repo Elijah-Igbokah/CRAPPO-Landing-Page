@@ -1,15 +1,21 @@
 let elements = document.getElementsByClassName("col");
-let colTitle = document.getElementsByClassName("activeIcon");
 for(var i=0; i < elements.length; i++){
     elements[i].onclick = function(){
         document.querySelectorAll(".col").forEach(el =>{
             el.classList.remove("col-active");
         })
-        document.querySelectorAll(".activeIcon").forEach(el =>{
-            el.classList.remove("activeIcon");
+        document.querySelectorAll(".mining-btn").forEach(el =>{
+            el.classList.remove("show-icon");
+        })
+        document.querySelectorAll(".grid-btn-icon").forEach(el =>{
+            el.classList.add("show-icon");
         })
         this.classList.add("col-active");
-        document.querySelector(".activeIcon").classList.add("activeIcon")
+
+        // Select the classes within the parent class that is clicked and show or remove as appopriate
+        this.querySelector(".mining-btn").classList.add("show-icon")
+        this.querySelector(".grid-btn-icon").classList.remove("show-icon")
+
     };
 }
 

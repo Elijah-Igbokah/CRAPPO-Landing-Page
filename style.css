@@ -20,21 +20,18 @@ body {
   }
 
 
-nav{
+#nav-container{
     padding-left: 7.5rem;
-    padding-top: 4.125rem;
-    display: flex;
+    padding-right: 3rem;
+
+    /* padding-top: 4.125rem; */
+    /* display: flex;
     align-items: center;
     margin-bottom: 86px;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
-/* section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
+
 
 .left-side{
     display: flex;
@@ -44,10 +41,10 @@ nav{
     cursor: pointer;
 }
 
+
 #logo{
     width: 40px;
     margin-right: 1rem;
-    
 }
 
 #logo-text{
@@ -56,7 +53,6 @@ nav{
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height */
     letter-spacing: 0.04em;
 }
 
@@ -70,7 +66,6 @@ nav{
     padding: 0px 0px;
     margin-right: 2rem;
     list-style: none;
-    
 }
 
 a, button{
@@ -79,9 +74,8 @@ a, button{
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 28px;
-    /* identical to box height, or 175% */
     letter-spacing: 0.01em;
 }
 
@@ -93,8 +87,18 @@ a:hover{
     padding: 14px 32px;
     background: #3671E9;
     border-radius: 32px;
+    margin-left: 20px;
 }
-
+#vertical-seperator{
+    border-left: 2px solid #F2F2F2;
+    opacity: 0.3;
+    min-height: 20px;
+}
+#login-a{
+    font-weight: 500;
+    margin-right: 10px;
+    margin-left: 56px;
+}
 /* HEADER */
 
 header{
@@ -140,8 +144,8 @@ header{
     font-size: 16px;
     line-height: 28px;
     /* identical to box height, or 175% */
-
     letter-spacing: 0.01em;
+    margin-bottom: 0;
 }
 
 .hero-btn{
@@ -450,8 +454,8 @@ text-align: center;
     background: #FFFFFF;
     box-shadow: 0 0 1px #757779;
     border-radius: 16px;
-
 }
+
 
 .col-active{
     background: #2B076E;
@@ -500,7 +504,8 @@ text-align: center;
 }
 
 
-#grid-btn-icon{
+
+.grid-btn-icon{
     width: 64px;
     height: 64px;
     background: #ffff;
@@ -509,9 +514,10 @@ text-align: center;
     font-size: 1.2rem;
     border-radius: 50%;
     border: 2px solid rgba(43, 7, 110, 0.2);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
+    
 }
 
 
@@ -520,7 +526,6 @@ text-align: center;
     display: none;
     flex-direction: row;
     align-items: center;
-    /* justify-content: center; */
     gap: 24px;
     padding: 16px 16px 16px 24px;
     width: 202px;
@@ -528,6 +533,10 @@ text-align: center;
     border-radius: 32px;
     cursor: pointer;
 }
+.show-icon{
+    display: flex;
+}
+
 .mining-btn > h2{
     background: #3671E9;
     font-family: 'Rubik';
@@ -535,10 +544,7 @@ text-align: center;
     font-weight: 500;
     font-size: 1rem;
     line-height: 150%;
-    /* identical to box height, or 27px */
-
     text-align: center;
-    /* display: inline-block; */
 }
 .mining-btn-icon{
     /* padding: 6px 11px; */
@@ -552,9 +558,10 @@ text-align: center;
     align-items: center;
     justify-content: center;
 }
-.activeIcon{
+/* .activeIcon{
     display: flex;
-}
+} */
+
 
 /* SECTION 3 */
 .sect-3{

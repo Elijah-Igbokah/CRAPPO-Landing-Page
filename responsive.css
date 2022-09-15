@@ -1,0 +1,217 @@
+@media only screen and (max-width: 1337px) {
+    nav, header, .sect-3 > .flex-wrapper{
+        padding-left: 4rem;
+    }
+    .sect-3 #div2, .sect-3 .flex-wrapper{
+        gap: 2rem;
+    }
+    .footer-grid{
+        padding: 5rem 4rem;
+    }
+    #bottom-footer{
+        padding: 2.5rem 4rem;
+    }
+  }
+
+@media only screen and (max-width: 1279px) {
+    nav, header, .sect-3 > .flex-wrapper{
+        padding-left: 3rem;
+    }
+  }
+
+@media only screen and (max-width: 1196px){
+    .sect-1{
+        padding: 6.25rem 4rem;
+    }
+    .sect-3 #div3{
+        gap: 1rem;
+    }
+    .feature-img, .hero-img > img{
+        width: 90%;
+    }
+  }
+
+@media only screen and (max-width: 1024px){
+    nav, header, .sect-3 > .flex-wrapper{
+        padding-left: 1rem;
+    }
+    .sect-3 #div2, .sect-3 .flex-wrapper{
+        gap: 1rem;
+    }
+    .footer-grid{
+        padding: 5rem 1rem;
+        grid-template-columns: auto 8rem 8rem 19.1875rem;
+        grid-gap: 1rem;
+    }
+    #bottom-footer{
+        padding: 2.5rem 1rem;
+    }
+
+    .hero-text > h1{
+        font-size: 3rem;
+        line-height: 50px;
+    }
+    .sect-1{
+        padding: 6.25rem 1rem;
+    }
+    #payment-systems h1{
+        font-size: 20px;
+    }
+
+    .footer-icons{
+        padding: 0 20px;
+    }
+    .footer-icons > img{
+        width: 70px;
+    }
+    .grid-wrapper{
+        row-gap: 30px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+  }
+
+@media only screen and (max-width: 815px){
+    html{
+        font-size: 14px;
+    }
+    .right-side{
+        display: none;
+    }
+    .stats-wrapper{
+        gap: 2rem;
+    }
+    .hash-rate{
+        left: 10%;
+        width: 80%;
+        padding: 3rem;
+
+    }
+    .flex-text{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    html{
+        font-size: 13px;
+    }
+    header{
+        display: block;
+    }
+    nav{
+        margin-bottom: 36px;
+        padding-top: 20px;
+    }
+    .hero-text{
+        width: 100%;
+        padding-top: 0;
+    }
+    .hero-img, .flex-text{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .grid-wrapper{
+        grid-template-columns: 1fr;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .stats-wrapper, .flex-wrapper, .sect-3 #div2{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .check-text > p, .check-text > h2{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+        line-height: 140%;
+    }
+    .hash-rate{
+        height: auto;
+        margin-top: 50px;
+    }
+    .hash-rate #top{
+        flex-direction: column;
+        gap: 2.5rem;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    #top input{
+        width: 80%;
+    }
+    #top button{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        transition: all 1s ease;
+    }
+    #bottom h2{
+        font-size: 1.5rem;
+        margin: 10px 0;
+
+    }
+    #bottom p{
+        font-size: 1rem;
+        line-height: 20px;
+        /* identical to box height, or 175% */
+        letter-spacing: 0.01em;
+        /* Neutral / Grey 3 */
+        color: #828282;
+    }
+
+    .sect-3 .wrapper{
+        width: 100%;
+    }
+    
+    .sect-3 .wrapper > h1, .sect2-text > h2, .sect-3 .wrapper > h1{
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 150%;
+        width: 90%;
+        margin: auto;
+    }
+
+    .col-title > h1{
+        font-size: 2.5rem;
+    }
+        
+    .col > p{
+        font-size: 1.5rem;
+    }
+    .footer-grid{
+        grid-template-columns: 1fr;
+        grid-gap: 3rem;
+        text-align: center;
+    }
+    .footer-logo{
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-icons{
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    #bottom-footer{
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .sect-3 .flex-text, .hero-tag{
+        width: 300px;
+        gap: .5rem;
+    }
+    .hero-tag > p1, .hero-tag > p{
+        font-size: 12px;
+    }
+
+
+}
+
+  
